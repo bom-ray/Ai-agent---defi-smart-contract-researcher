@@ -1,0 +1,19 @@
+{
+  "name": "defi-smart-contract-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node ai_agent.js",
+    "research:index": "node index_research.js",
+    "research:force": "node index_research.js --force",
+    "doctor": "node doctor.js",
+    "economic:analyze": "node economic_analysis.js",
+    "economic:test": "npm --prefix workspace test",
+    "economic:full": "node economic_analysis.js"
+  },
+  "dependencies": {
+    "chromadb": "3.5.0",
+    "pdfjs-dist": "6.3.289"
+  }
+}
